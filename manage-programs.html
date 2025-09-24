@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manage Programs</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body { margin: 0; font-family: 'Roboto', sans-serif; background: #f4f9f8; color: #333; }
+    nav { background: #fff; padding: 1rem 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); display: flex; justify-content: space-between; }
+    nav a { text-decoration: none; margin: 0 1rem; color: #044d40; font-weight: 500; }
+    h1 { text-align: center; margin: 2rem 0; color: #044d40; }
+    .container { max-width: 900px; margin: auto; }
+    .card { background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+    .card h2 { margin: 0 0 1rem; color: #06634a; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; margin-bottom: 0.3rem; }
+    input, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px; }
+    button { background: #06634a; color: #fff; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; }
+    button:hover { background: #044d40; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><a href="admin.html">Admin Dashboard</a></div>
+    <div>
+      <a href="manage-events.html">Events</a>
+      <a href="manage-programs.html">Programs</a>
+      <a href="manage-feedback.html">Feedback</a>
+    </div>
+  </nav>
+
+  <h1>Manage Programs</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Add New Program</h2>
+      <form>
+        <div class="form-group">
+          <label for="title">Program Title</label>
+          <input type="text" id="title" placeholder="Enter program title" />
+        </div>
+        <div class="form-group">
+          <label for="details">Details</label>
+          <textarea id="details" rows="4" placeholder="Enter program details"></textarea>
+        </div>
+        <button type="submit">Add Program</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Existing Programs</h2>
+      <p>• Mental Health Counseling</p>
+      <p>• Fitness Training</p>
+    </div>
+  </div>
+</body>
+</html>

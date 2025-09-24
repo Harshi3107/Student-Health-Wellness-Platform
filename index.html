@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Welfare Portal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  :root {
+    --primary-light: #a2d5c6;
+    --primary-light-2: #d0ece7;
+    --primary-dark: #044d40;
+    --white: #fff;
+    --shadow-color: rgba(0,0,0,0.1);
+    --border-radius: 12px;
+    --font-family: 'Roboto', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--primary-light-2);
+    color: #333;
+  }
+
+  nav {
+    background: var(--white);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover, nav a:focus { color: var(--primary-light); }
+
+  main {
+    max-width: 1000px;
+    margin: 3rem auto 5rem;
+    padding: 0 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 400px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    color: #06634a;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: var(--primary-dark);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background: #033a30;
+  }
+
+  footer {
+    background: var(--white);
+    text-align: center;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 -2px 6px var(--shadow-color);
+    font-size: 0.875rem;
+    color: #666;
+  }
+
+  footer a {
+    color: var(--primary-light);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover, footer a:focus { color: var(--primary-dark); }
+</style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="student.html">Student Portal</a></li>
+    <li><a href="admin.html">Admin Portal</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Welcome to Student Welfare Portal</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Student Portal</h3>
+      <p>Access programs, events, and submit feedback to help us improve student well-being.</p>
+      <a href="student.html" class="btn">Go to Student Portal</a>
+    </div>
+
+    <div class="card">
+      <h3>Admin Portal</h3>
+      <p>Manage student programs, update events, and review feedback for better support.</p>
+      <a href="admin.html" class="btn">Go to Admin Portal</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Student Welfare Initiative | Contact: 
+  <a href="mailto:support@studentwelfare.edu">support@studentwelfare.edu</a></p>
+</footer>
+</body>
+</html>
