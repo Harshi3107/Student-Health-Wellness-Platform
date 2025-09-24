@@ -1,6 +1,6 @@
 Student Health & Wellness Platform – Frontend
 
-A student-centric digital platform to support well-being through an intuitive frontend interface for students, faculty, and admins.
+A student-centric digital platform to support well-being through an intuitive frontend interface for students and admins.
 
 🌟 Overview
 
